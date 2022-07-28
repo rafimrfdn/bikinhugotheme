@@ -1,0 +1,58 @@
+<div class="section-item is-first-section full-width">
+  <div class="container">
+    <div class="tie-row main-content-row">
+      <div class="main-content tie-col-md-12">
+        <section id="tie-block_1066" class="slider-area mag-box">
+          <div class="slider-area-inner">
+            <div
+              id="tie-main-slider-7-block_1066"
+              class="tie-main-slider main-slider boxed-four-taller-slider boxed-slider tie-slick-slider-wrapper"
+              data-slider-id="7"
+              data-speed="3000"
+            >
+              <div class="main-slider-inner">
+                <ul class="tie-slider-nav"></ul>
+                <div class="containerblock_1066">
+                  <div class="tie-slick-slider">
+                    {{ range first 5 (where .Site.RegularPages "Type" "in"
+                    .Site.Params.mainSections) }}
+                    <div
+                      style="background-image: url('{{ .Params.thumbnail}}');"
+                      class="slide tie-video"
+                    >
+                      <a
+                        href="{{ .Permalink }}"
+                        class="all-over-thumb-link"
+                        aria-label="The Ultimate Hurghada Travel Guide"
+                      ></a>
+                      <div class="thumb-overlay">
+                        <span class="post-cat-wrap"
+                          ><a
+                            class="post-cat tie-cat-6"
+                            href="{{ .Page.Permalink }}"
+                            >{{ .Params.categories }}</a
+                          ></span
+                        >
+                        <div class="thumb-content">
+                          <div class="thumb-meta">
+                            <span class="date meta-item tie-icon"
+                              >{{ .Date }}</span
+                            >
+                          </div>
+                          <h2 class="thumb-title">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                          </h2>
+                        </div>
+                      </div>
+                    </div>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,74 @@
+<div
+  id="tiepost-3439-section-7208"
+  class="section-wrapper container-full without-background"
+>
+  <div class="section-item full-width">
+    <div class="container">
+      <div class="tie-row main-content-row">
+        <div class="main-content tie-col-md-12">
+          <section
+            id="tie-block_1518"
+            class="slider-area mag-box media-overlay"
+          >
+            <div class="mag-box-title the-global-title">
+              <h3>Check Also</h3>
+            </div>
+            <div class="slider-area-inner">
+              <div
+                id="tie-main-slider-9-block_1518"
+                class="tie-main-slider main-slider grid-2-big boxed-slider grid-slider-wrapper tie-slick-slider-wrapper"
+                data-slider-id="9"
+                data-speed="3000"
+              >
+                <div class="main-slider-inner">
+                  <div class="containerblock_1518">
+                    <div class="tie-slick-slider">
+                      <ul class="tie-slider-nav"></ul>
+                      <div class="slide">
+                        {{ range first 5 (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
+                        <div
+                          style="background-image: url('{{ .Params.thumbnail}}');"
+                          class="grid-item slide-id-3576 tie-slide-1 tie-video"
+                        >
+                          <a
+                            href="2016/11/06/20-photos-to-inspire-you-to-visit-alexandria/"
+                            class="all-over-thumb-link"
+                            aria-label="20 Photos to Inspire You to Visit Alexandria"
+                          ></a>
+                          <div class="thumb-overlay">
+                            <span class="tie-icon tie-media-icon"></span>
+                            <span class="post-cat-wrap"></span>
+                              <a
+                                class="post-cat tie-cat-6"
+                                href="category/africa/"
+                                >{{ .Params.Tags }}</a
+                              >
+                            </span>
+                            <div class="thumb-content">
+                              <div class="thumb-meta">
+                                <span class="date meta-item tie-icon"
+                                  >{{ .Date }}</span
+                                >
+                              </div>
+                              <h2 class="thumb-title">
+                                <a
+                                  href="2016/11/06/20-photos-to-inspire-you-to-visit-alexandria/"
+                                  >{{ .Title }}</a
+                                >
+                              </h2>
+                            </div>
+                          </div>
+                        </div>
+                        {{ end }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

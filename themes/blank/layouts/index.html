@@ -1,0 +1,14 @@
+{{ define "main" }}
+<main>
+  <!-- definisikan jumlah list artikel yang tampil melalui config.toml -->
+  {{ $paginator := .Paginate (.Site.RegularPages) }} 
+
+  {{ range $paginator.Pages }} 
+    {{ .Render "summary" }} 
+  {{ end }} 
+
+  {{ partial "pagination.html" . }}
+</main>
+<!-- {{ partial "sidebar.html" . }}  -->
+
+{{ end }}

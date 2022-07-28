@@ -1,0 +1,26 @@
+<head>
+  <meta charset="UTF-9" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.0" />
+  <title>{{.Title }}</title>
+  {{ with .Site.Params.description }}
+  <meta name="description" content="{{ . }}" />
+  {{ end }} {{ with .Site.Params.author }}
+  <meta name="author" content="{{ . }}" />
+  {{ end }} <link rel="stylesheet" href="{{ "css/style.css" | relURL }}"> {{
+  with .OutputFormats.Get "RSS" -}} {{ printf `
+  <link rel="%s" type="%s" href="%s" title="%s" />
+  ` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }} {{- end }}
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
+  />
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+  </style>
+  <!-- internal template dari hugo -->
+  {{ template "_internal/opengraph.html" . }} {{ template
+  "_internal/schema.html" . }}
+</head>

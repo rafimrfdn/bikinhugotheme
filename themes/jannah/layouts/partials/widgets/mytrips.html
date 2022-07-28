@@ -1,0 +1,139 @@
+<div
+  id="tie-block_1820"
+  class="mag-box big-post-left-box big-thumb-left-box first-post-gradient"
+  data-current="1"
+>
+  <div class="container-wrapper">
+    <div class="mag-box-title the-global-title">
+      <h3>My Trips</h3>
+      <div class="tie-alignright">
+        <div class="mag-box-options">
+          <ul class="mag-box-filter-links is-flex-tabs">
+            {{ range .Site.Taxonomies.categories }}
+            <li>
+              <a
+                href="{{ .Page.Permalink }}"
+                class="block-ajax-term block-all-term active"
+                >{{ .Page.Title}}</a
+              >
+            </li>
+            {{ end }}
+          </ul>
+          <ul class="slider-arrow-nav">
+            <li>
+              <a
+                class="block-pagination prev-posts pagination-disabled"
+                href="#"
+              >
+                <span class="tie-icon-angle-left" aria-hidden="true"></span>
+                <span class="screen-reader-text">Previous page</span>
+              </a>
+            </li>
+            <li>
+              <a class="block-pagination next-posts" href="#">
+                <span class="tie-icon-angle-right" aria-hidden="true"></span>
+                <span class="screen-reader-text">Next page</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mag-box-container clearfix">
+      <ul class="posts-items posts-list-container">
+        {{ range first 1 (.Pages) }}
+        <li class="post-item tie-thumb">
+          <div
+            class="big-thumb-left-box-inner"
+            style="background-image: url('{{ .Params.thumbnail}}');"
+          >
+            <a
+              aria-label="Where to Find the Best Food in Montreal"
+              href="{{ .Page.Permalink }}"
+              class="post-thumb"
+            >
+              <div class="post-thumb-overlay-wrap">
+                <div class="post-thumb-overlay">
+                  <span class="tie-icon tie-media-icon"></span>
+                </div>
+              </div>
+            </a>
+            <div class="post-overlay">
+              <div class="post-content">
+                <a class="post-cat tie-cat-1" href="{{ .Permalink }}"
+                  >{{ .Params.Tags }}</a
+                >
+                <h2 class="post-title">
+                  <a href="2017/04/06/where-to-find-the-best-food-in-montreal/"
+                    >{{ .Title }}</a
+                  >
+                </h2>
+                <div class="thumb-meta">
+                  <div class="post-meta clearfix">
+                    <span class="author-meta single-author no-avatars"
+                      ><span class="meta-item meta-author-wrapper meta-author-1"
+                        ><span class="meta-author"
+                          ><a
+                            href="author/admin/"
+                            class="author-name tie-icon"
+                            title="Tony Stark"
+                            >{{ .Site.Author.name }}</a
+                          ></span
+                        ></span
+                      ></span
+                    ><span class="date meta-item tie-icon">{{ .Date }}</span>
+                    <div class="tie-alignright">
+                      <span class="meta-comment tie-icon meta-item fa-before"
+                        >0</span
+                      ><span class="meta-views meta-item warm"
+                        ><span class="tie-icon-fire" aria-hidden="true"></span>
+                        1,468
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        {{ end }} {{ range first 5 (.Pages) }}
+
+        <li class="post-item tie-slider">
+          <a
+            aria-label="The Ultimate Guide to New York City in a Weekend"
+            href="#"
+            class="post-thumb"
+          >
+            <div class="post-thumb-overlay-wrap">
+              <div class="post-thumb-overlay">
+                <span class="tie-icon tie-media-icon"></span>
+              </div>
+            </div>
+            <img
+              width="220"
+              height="150"
+              class="attachment-jannah-image-small size-jannah-image-small lazy-img tie-small-image wp-post-image"
+              alt=""
+              loading="lazy"
+              src="{{ .Params.thumbnail}}"
+            />
+          </a>
+          <div class="post-details">
+            <div class="post-meta clearfix">
+              <span class="date meta-item tie-icon">{{ .Date }}</span>
+            </div>
+            <h2 class="post-title">
+              <a
+                href="2017/03/16/the-ultimate-guide-to-new-york-city-in-a-weekend/"
+                >{{ .Title }}</a
+              >
+            </h2>
+          </div>
+        </li>
+        {{ end}}
+      </ul>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</div>

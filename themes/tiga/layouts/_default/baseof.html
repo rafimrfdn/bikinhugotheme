@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head" . -}}
+  <body class="sans-serif">
+    {{- partial "header" . -}}
+    <main id="content">
+      <ul class="mw6 center">
+        <!-- Ranges through content/posts/*.md -->
+        {{ range .Pages.ByDate.Reverse }}
+        <li class="list">
+          <a
+            class="link dt w-100 bb b--black-10 pb2 mt2 blue"
+            href="{{.Permalink}}"
+          >
+            <div class="dtc w3">
+              <img src="{{ .Params.thumbnail }}" class="db w-100 dim" />
+            </div>
+            <div class="dtc v-top pl2">
+              <h1 class="f6 f5-ns fw6 lh-title black mv0 dim">{{.Title}}</h1>
+              <h2 class="f6 fw4 mt2 mb0 black-60">{{.Summary}}</h2>
+              <dl class="mt2 f6">
+                <dt class="clip">Date</dt>
+                <dd class="ml0 dim">{{.Date}}</dd>
+              </dl>
+            </div>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+
+      {{ block "main" . }}{{ end }}
+    </main>
+    {{- partial "footer.html" . -}}
+  </body>
+</html>

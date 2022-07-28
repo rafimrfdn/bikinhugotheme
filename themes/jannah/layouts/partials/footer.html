@@ -1,0 +1,246 @@
+<footer id="footer" class="site-footer dark-skin dark-widgetized-area">
+  <div id="footer-widgets-container">
+    <div class="container">
+      <div class="footer-widget-area">
+        <div class="tie-row">
+          <div class="tie-col-sm-6 normal-side">
+            <div
+              id="tag_cloud-6"
+              class="container-wrapper widget widget_tag_cloud"
+            >
+              <div class="widget-title the-global-title has-block-head-4">
+                <div class="the-subtitle">Tags</div>
+              </div>
+              <div class="tagcloud">
+                {{ range .Site.Taxonomies.tags }}
+                <a
+                  href="{{ .Page.Permalink }}"
+                  class="tag-cloud-link tag-link-175"
+                  style="
+                    font-size: 12px !important;
+                    display: inline-block;
+                    background: rgba(0, 0, 0, 0.03);
+                    border: 1px solid rgba(0, 0, 0, 0.1);
+                    border-top-color: rgba(0, 0, 0, 0.1);
+                    border-right-color: rgba(0, 0, 0, 0.1);
+                    border-bottom-color: rgba(0, 0, 0, 0.1);
+                    border-left-color: rgba(0, 0, 0, 0.1);
+                    line-height: 14px;
+                    margin: 3px;
+                    padding: 6px 10px;
+                    border-radius: 2px;
+                    border-color: rgba(255, 255, 255, 0.1);
+                  "
+                  >{{ .Page.Title }}</a
+                >{{ end }}
+              </div>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="tie-col-sm-3 normal-side">
+            <div
+              id="posts-list-widget-8"
+              class="container-wrapper widget posts-list"
+            >
+              <div class="widget-title the-global-title has-block-head-4">
+                <div class="the-subtitle">Last Modified Posts</div>
+              </div>
+
+              <div class="widget-posts-list-wrapper">
+                <div class="widget-posts-list-container posts-pictures-widget">
+                  <div class="tie-row widget-posts-wrapper">
+                    {{ range first 5 (where .Site.RegularPages "Type" "in"
+                    .Site.Params.mainSections) }}
+                    <div class="widget-single-post-item tie-col-xs-4 tie-thumb">
+                      <a
+                        aria-label="Ten Tips for Your First Trip to China"
+                        href="2016/11/06/vinta-camera-bags/"
+                        class="post-thumb"
+                      >
+                        <div class="post-thumb-overlay-wrap">
+                          <div class="post-thumb-overlay">
+                            <span class="tie-icon tie-media-icon"></span>
+                          </div>
+                        </div>
+                        <img
+                          width="390"
+                          height="220"
+                          src="{{ .Params.thumbnail}}"
+                          class="attachment-jannah-image-large size-jannah-image-large lazy-img wp-post-image"
+                          alt=""
+                          loading="lazy"
+                      /></a>
+                    </div>
+                    {{ end }}
+                  </div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+            </div>
+          </div>
+          <div class="tie-col-sm-3 normal-side">
+            <div
+              id="tie-widget-categories-2"
+              class="container-wrapper widget widget_categories tie-widget-categories"
+            >
+              <div class="widget-title the-global-title has-block-head-4">
+                <div class="the-subtitle">Destinations</div>
+              </div>
+              <ul>
+                {{ range .Site.Taxonomies.categories }}
+                <li class="cat-item cat-counter tie-cat-item-6">
+                  <a
+                    href="{{ .Page.Permalink }}"
+                    title="Beautiful photography and adventure travel stories from Africa."
+                    >{{ .Page.Title}}
+                  </a>
+                  <span>{{ .Count}}</span>
+                </li>
+                {{ end }}
+              </ul>
+              <div class="clearfix"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-widget-area">
+        <div class="tie-row">
+          <div class="fullwidth-area tie-col-sm-12">
+            <div
+              id="tie-slider-widget-6"
+              class="widget container-wrapper tie-slider-widget widget-content-only"
+            >
+              <div
+                class="main-slider boxed-slider boxed-five-slides-slider slider-in-widget"
+              >
+                <div class="loader-overlay">
+                  <div class="spinner">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                  </div>
+                </div>
+                <div class="main-slider-inner">
+                  <ul class="tie-slider-nav"></ul>
+                  <div class="container">
+                    <div class="tie-slick-slider">
+                      {{ range first 6 (.Pages) }}
+                      <div
+                        class="slide"
+                        style="background-image: url('{{ .Params.thumbnail}}')"
+                      >
+                        <img src="" alt="" />
+                        <div class="slide-bg"></div>
+                        <a
+                          href="{{ .Permalink}}"
+                          title="Where to Find the Best Food in Montreal"
+                          class="all-over-thumb-link"
+                          ><span class="screen-reader-text"
+                            >{{ .Title }}</span
+                          ></a
+                        >
+                        <div class="thumb-overlay">
+                          <div class="thumb-content">
+                            <div class="thumb-meta">
+                              <div class="post-meta clearfix">
+                                <span class="date meta-item tie-icon"
+                                  >{{ .Date }}</span
+                                >
+                              </div>
+                            </div>
+                            <h3 class="thumb-title">
+                              <a
+                                href="2017/04/06/where-to-find-the-best-food-in-montreal/"
+                                title="Where to Find the Best Food in Montreal"
+                                >{{ .Title }}</a
+                              >
+                            </h3>
+                          </div>
+                        </div>
+                      </div>
+                      {{ end }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="site-info" class="site-info site-info-layout-2">
+    <div class="container">
+      <div class="tie-row">
+        <div class="tie-col-md-12">
+          <div class="copyright-text copyright-text-first">
+            &copy; Copyright 2022, All Rights Reserved
+          </div>
+          <ul class="social-icons">
+            <li class="social-icons-item">
+              <a
+                class="social-link facebook-social-icon"
+                rel="external noopener nofollow"
+                target="_blank"
+                href="#"
+                ><span class="tie-social-icon tie-icon-facebook"></span
+                ><span class="screen-reader-text">Facebook</span></a
+              >
+            </li>
+            <li class="social-icons-item">
+              <a
+                class="social-link pinterest-social-icon"
+                rel="external noopener nofollow"
+                target="_blank"
+                href="//www.pinterest.com/"
+                ><span class="tie-social-icon tie-icon-pinterest"></span
+                ><span class="screen-reader-text">Pinterest</span></a
+              >
+            </li>
+            <li class="social-icons-item">
+              <a
+                class="social-link flickr-social-icon"
+                rel="external noopener nofollow"
+                target="_blank"
+                href="//www.flickr.com/"
+                ><span class="tie-social-icon tie-icon-flickr"></span
+                ><span class="screen-reader-text">Flickr</span></a
+              >
+            </li>
+            <li class="social-icons-item">
+              <a
+                class="social-link youtube-social-icon"
+                rel="external noopener nofollow"
+                target="_blank"
+                href="//youtube.com/user/TEAMMESAI"
+                ><span class="tie-social-icon tie-icon-youtube"></span
+                ><span class="screen-reader-text">YouTube</span></a
+              >
+            </li>
+            <li class="social-icons-item">
+              <a
+                class="social-link tumblr-social-icon"
+                rel="external noopener nofollow"
+                target="_blank"
+                href="https://tumblr.com/"
+                ><span class="tie-social-icon tie-icon-tumblr"></span
+                ><span class="screen-reader-text">Tumblr</span></a
+              >
+            </li>
+            <li class="social-icons-item">
+              <a
+                class="social-link tripadvisor-social-icon"
+                rel="external noopener nofollow"
+                target="_blank"
+                href="//www.tripadvisor.com/"
+                ><span class="tie-social-icon tie-icon-tripadvisor"></span
+                ><span class="screen-reader-text">TripAdvisor</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,57 @@
+<div class="mag-box-container clearfix">
+  <ul class="posts-items posts-list-container">
+    {{ range first 5 (where .Site.RegularPages "Type" "in"
+    .Site.Params.mainSections) }}
+    <li
+      class="post-item post-3582 post type-post status-publish format-standard has-post-thumbnail category-africa tag-egypt tag-hurghada tag-video tie-video"
+    >
+      <a href="{{ .Page.Permalink }}" class="post-thumb"
+        ><span class="post-cat-wrap"
+          ><span class="post-cat tie-cat-6"
+            >{{ .Site.Taxonomies.Categories }}</span
+          ></span
+        >
+        <div class="post-thumb-overlay-wrap">
+          <div class="post-thumb-overlay">
+            <span class="tie-icon tie-media-icon"></span>
+          </div>
+        </div>
+        <img
+          width="390"
+          height="220"
+          src="#"
+          class="attachment-jannah-image-large size-jannah-image-large lazy-img wp-post-image"
+          alt=""
+          loading="lazy"
+          style="background-image: url('{{ .Params.thumbnail}}')"
+        />
+      </a>
+      <div class="post-details">
+        <div class="post-meta clearfix">
+          <span class="author-meta single-author no-avatars"
+            ><span class="meta-item meta-author-wrapper meta-author-46"
+              ><span class="meta-author"
+                ><a href="#" class="author-name tie-icon" title="Peter Parker"
+                  >{{ .Site.Author.name }}
+                </a></span
+              ></span
+            ></span
+          ><span class="date meta-item tie-icon">{{ .Date }}</span>
+          <div class="tie-alignright">
+            <span class="meta-comment tie-icon meta-item fa-before">0</span
+            ><span class="meta-views meta-item hot"
+              ><span class="tie-icon-fire" aria-hidden="true"></span>
+              2,938
+            </span>
+          </div>
+        </div>
+        <h2 class="post-title">
+          <a href="2017/01/26/vinta-camera-bags-17/">{{ .Title }}</a>
+        </h2>
+        <p class="post-excerpt">{{ .Summary }}</p>
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+  <div class="clearfix"></div>
+</div>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-US" data-skin="light" prefix="og: http://ogp.me/ns#">
+  {{ partial "head" .}}
+
+  <link
+    rel="preload"
+    href="../css/style.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript>
+    <link rel="stylesheet" href="../css/style.css" />
+  </noscript>
+  <script type="text/javascript">
+    if ("loading" in HTMLImageElement.prototype) {
+      document.querySelectorAll("[data-src]").forEach(function (img) {
+        img.src = img.dataset.src;
+        img.removeAttribute("data-src");
+      });
+    }
+  </script>
+  <link
+    rel="preload"
+    href="wp-content/themes/jannah/assets/css/helpers.min.css"
+    as="style"
+    onload='this.onload=null;this.rel="stylesheet"'
+  />
+  <noscript>
+    <link
+      rel="stylesheet"
+      id="tie-css-helpers-css"
+      href="wp-content/themes/jannah/assets/css/helpers.min.css"
+      type="text/css"
+      media="all"
+    />
+  </noscript>
+  <script>
+    console.log("Style tie-css-helpers");
+  </script>
+  <link
+    rel="preload"
+    href="wp-content/themes/jannah/assets/ilightbox/light-skin/skin.css"
+    as="style"
+    onload='this.onload=null;this.rel="stylesheet"'
+  />
+  <noscript>
+    <link
+      rel="stylesheet"
+      id="tie-css-ilightbox-css"
+      href="wp-content/themes/jannah/assets/ilightbox/light-skin/skin.css"
+      type="text/css"
+      media="all"
+    />
+  </noscript>
+  <script>
+    console.log("Style tie-css-ilightbox");
+  </script>
+  <link
+    rel="preload"
+    href="wp-content/themes/jannah/assets/css/fontawesome.css"
+    as="style"
+    onload='this.onload=null;this.rel="stylesheet"'
+  />
+  <noscript>
+    <link
+      rel="stylesheet"
+      id="tie-fontawesome5-css"
+      href="wp-content/themes/jannah/assets/css/fontawesome.css"
+      type="text/css"
+      media="all"
+    />
+  </noscript>
+  <script>
+    console.log("Style tie-fontawesome5");
+  </script>
+
+  <div id="autocomplete-suggestions" class="autocomplete-suggestions"></div>
+  <div id="is-scroller-outer">
+    <div id="is-scroller"></div>
+  </div>
+  <div id="fb-root"></div>
+  <div
+    id="tie-popup-search-desktop"
+    class="tie-popup tie-popup-search-wrap"
+    style="display: none"
+  >
+    <a href="#" class="tie-btn-close remove big-btn light-btn">
+      <span class="screen-reader-text">Close</span>
+    </a>
+    <div class="popup-search-wrap-inner">
+      <div
+        class="live-search-parent pop-up-live-search"
+        data-skin="live-search-popup"
+        aria-label="Search"
+      >
+        <form method="get" class="tie-popup-search-form" action="./">
+          <input
+            class="tie-popup-search-input is-ajax-search"
+            inputmode="search"
+            type="text"
+            name="s"
+            title="Search for"
+            autocomplete="off"
+            placeholder="Type and hit Enter"
+          />
+          <button class="tie-popup-search-submit" type="submit">
+            <span
+              class="tie-icon-search tie-search-icon"
+              aria-hidden="true"
+            ></span>
+            <span class="screen-reader-text">Search for</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script
+    type="text/javascript"
+    src="https://jannah.tielabs.com/travel/wp-includes/js/jquery/jquery.min.js"
+    id="jquery-core-js"
+  ></script>
+  <script
+    type="text/javascript"
+    defer="defer"
+    src="https://jannah.tielabs.com/travel/wp-content/plugins/jannah-demos/assets/js/scripts.js"
+    id="tie-jannah-demos-js-js"
+  ></script>
+  <script type="text/javascript" id="tie-scripts-js-extra">
+    /* <![CDATA[ */
+    var tie = {
+      is_rtl: "",
+      ajaxurl: "https:\/\/jannah.tielabs.com\/travel\/wp-admin\/admin-ajax.php",
+      is_taqyeem_active: "",
+      is_sticky_video: "",
+      mobile_menu_top: "",
+      mobile_menu_active: "area_1",
+      mobile_menu_parent: "",
+      lightbox_all: "true",
+      lightbox_gallery: "true",
+      lightbox_skin: "light",
+      lightbox_thumb: "horizontal",
+      lightbox_arrows: "true",
+      is_singular: "1",
+      autoload_posts: "",
+      reading_indicator: "true",
+      lazyload: "true",
+      select_share: "true",
+      select_share_twitter: "true",
+      select_share_facebook: "true",
+      select_share_linkedin: "true",
+      select_share_email: "",
+      facebook_app_id: "5303202981",
+      twitter_username: "tielabs",
+      responsive_tables: "true",
+      ad_blocker_detector: "",
+      sticky_behavior: "default",
+      sticky_desktop: "true",
+      sticky_mobile: "true",
+      sticky_mobile_behavior: "default",
+      ajax_loader:
+        '<div class="loader-overlay">\n\t\t\t\t<div class="spinner">\n\t\t\t\t\t<div class="bounce1"><\/div>\n\t\t\t\t\t<div class="bounce2"><\/div>\n\t\t\t\t\t<div class="bounce3"> <\/div>\n\t\t\t\t<\/div>\n\t\t\t<\/div>',
+      type_to_search: "1",
+      lang_no_results: "Nothing Found",
+      sticky_share_mobile: "true",
+      sticky_share_post: "",
+    };
+    /* ]]> */
+  </script>
+  <script
+    type="text/javascript"
+    defer="defer"
+    src="https://jannah.tielabs.com/travel/wp-content/themes/jannah/assets/js/scripts.min.js"
+    id="tie-scripts-js"
+  ></script>
+  <script
+    type="text/javascript"
+    defer="defer"
+    src="https://jannah.tielabs.com/travel/wp-content/themes/jannah/assets/ilightbox/lightbox.js"
+    id="tie-js-ilightbox-js"
+  ></script>
+  <script
+    type="text/javascript"
+    defer="defer"
+    src="https://jannah.tielabs.com/travel/wp-content/themes/jannah/assets/js/desktop.min.js"
+    id="tie-js-desktop-js"
+  ></script>
+  <script
+    type="text/javascript"
+    defer="defer"
+    src="https://jannah.tielabs.com/travel/wp-content/themes/jannah/assets/js/live-search.js"
+    id="tie-js-livesearch-js"
+  ></script>
+  <script
+    type="text/javascript"
+    defer="defer"
+    src="https://jannah.tielabs.com/travel/wp-content/themes/jannah/assets/js/sliders.min.js"
+    id="tie-js-sliders-js"
+  ></script>
+  <script src="../js/scripts.js"></script>
+
+  <body
+    id="tie-body"
+    class="home page-template-default page page-id-3439 tie-no-js boxed-layout wrapper-has-shadow block-head-11 magazine1 is-lazyload is-desktop is-header-layout-2 has-builder hide_share_post_top hide_share_post_bottom"
+  >
+    {{ partial "header" .}} {{ block "main" . }}{{ end }} {{ partial "footer"
+    .}}
+  </body>
+</html>

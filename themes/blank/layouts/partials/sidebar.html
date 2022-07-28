@@ -1,0 +1,16 @@
+<aside class="">
+  <div>
+        <div class="pa3 pa5-ns">
+          <h3 class="flex justify-center">LATEST POSTS</h3>
+          <ul class="list pl0 measure center">
+        {{ range first 5 (.Site.RegularPages ) }}
+            <li class="lh-copy pv3 ba bl-0 bt-0 br-0 b--dotted b--black-30">
+              <a href="{{ .RelPermalink }}" class="link black">{{ .Title }}</a>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+        
+
+  </div>
+</aside>

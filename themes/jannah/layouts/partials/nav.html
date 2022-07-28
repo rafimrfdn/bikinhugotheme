@@ -1,0 +1,124 @@
+<nav
+      id="main-nav"
+      data-skin="search-in-main-nav"
+      class="main-nav header-nav live-search-parent"
+      aria-label="Primary Navigation"
+    >
+      <div class="container">
+        <div class="main-menu-wrapper">
+          <div id="menu-components-wrap">
+            <div class="main-menu main-menu-wrap tie-alignleft">
+              <div id="main-nav-menu" class="main-menu header-menu">
+                <ul id="menu-main-menu" class="menu" role="menubar">
+                  <li
+                    id="menu-item-3514"
+                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-3439 current_page_item menu-item-3514 tie-current-menu menu-item-has-icon is-icon-only"
+                  >
+                    <a href="./">
+                      <span
+                        aria-hidden="true"
+                        class="tie-menu-icon fas fa-home"
+                      ></span>
+                      <span class="screen-reader-text">Home</span></a
+                    >
+                  </li>
+                    {{ range .Site.Taxonomies.categories }}
+                  <li
+                    id="menu-item-3519"
+                    class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3519"
+                  >
+                    <a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a>
+                  </li>
+                  {{ end }}
+                </ul>
+              </div>
+            </div>
+            <ul class="components">
+              <li class="search-compact-icon menu-item custom-menu-link">
+                <a href="#" class="tie-search-trigger">
+                  <span
+                    class="tie-icon-search tie-search-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="screen-reader-text">Search for</span>
+                </a>
+              </li>
+              <li class="side-aside-nav-icon menu-item custom-menu-link">
+                <a href="#">
+                  <span class="tie-icon-navicon" aria-hidden="true"></span>
+                  <span class="screen-reader-text">Sidebar</span>
+                </a>
+              </li>
+              <li class="list-social-icons menu-item custom-menu-link">
+                <a href="#" class="follow-btn">
+                  <span class="tie-icon-plus" aria-hidden="true"></span>
+                  <span class="follow-text">Follow</span>
+                </a>
+                <ul class="dropdown-social-icons comp-sub-menu">
+                  <li class="social-icons-item">
+                    <a
+                      class="social-link facebook-social-icon"
+                      rel="external noopener nofollow"
+                      target="_blank"
+                      href="#"
+                      ><span class="tie-social-icon tie-icon-facebook"></span
+                      ><span class="social-text">Facebook</span></a
+                    >
+                  </li>
+                  <li class="social-icons-item">
+                    <a
+                      class="social-link pinterest-social-icon"
+                      rel="external noopener nofollow"
+                      target="_blank"
+                      href="//www.pinterest.com/"
+                      ><span class="tie-social-icon tie-icon-pinterest"></span
+                      ><span class="social-text">Pinterest</span></a
+                    >
+                  </li>
+                  <li class="social-icons-item">
+                    <a
+                      class="social-link flickr-social-icon"
+                      rel="external noopener nofollow"
+                      target="_blank"
+                      href="//www.flickr.com/"
+                      ><span class="tie-social-icon tie-icon-flickr"></span
+                      ><span class="social-text">Flickr</span></a
+                    >
+                  </li>
+                  <li class="social-icons-item">
+                    <a
+                      class="social-link youtube-social-icon"
+                      rel="external noopener nofollow"
+                      target="_blank"
+                      href="//youtube.com/user/TEAMMESAI"
+                      ><span class="tie-social-icon tie-icon-youtube"></span
+                      ><span class="social-text">YouTube</span></a
+                    >
+                  </li>
+                  <li class="social-icons-item">
+                    <a
+                      class="social-link tumblr-social-icon"
+                      rel="external noopener nofollow"
+                      target="_blank"
+                      href="https://tumblr.com/"
+                      ><span class="tie-social-icon tie-icon-tumblr"></span
+                      ><span class="social-text">Tumblr</span></a
+                    >
+                  </li>
+                  <li class="social-icons-item">
+                    <a
+                      class="social-link tripadvisor-social-icon"
+                      rel="external noopener nofollow"
+                      target="_blank"
+                      href="//www.tripadvisor.com/"
+                      ><span class="tie-social-icon tie-icon-tripadvisor"></span
+                      ><span class="social-text">TripAdvisor</span></a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
