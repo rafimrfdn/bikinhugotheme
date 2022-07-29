@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "http://localhost:1313/"
 languageCode = "id"
 title = "Bikin"
 theme = "blank"
@@ -7,32 +7,34 @@ summaryLength = 12
 
 paginate = 3
 
+[permalink]
+post = ':/slug'
 
 [taxonomies]
-  category = 'categories'
-  tag = 'tags'
+category = 'categories'
+tag = 'tags'
 
 
 [Author]
-  name = "Rafi"
-  location = "Makassar"
+name = "Rafi"
+location = "Makassar"
 
 [Params]
-  description = "Deskripsi untuk JsonLD ditulis di config.toml"
-  logo = "/img/logo.png"
-  copyright = "I am license of website structure data"
-  # untuk rich data image missing tambahkan ini 
-  images = ["https://izzulislam.com/images/face.png"]
+description = "Deskripsi untuk JsonLD ditulis di config.toml"
+logo = "/img/logo.png"
+copyright = "I am license of website structure data"
+# untuk rich data image missing tambahkan ini 
+images = ["https://izzulislam.com/images/face.png"]
 
 
 [menu]
 [[menu.main]]
-  identifier = 'categories'
-  name = 'categories'
-  url = '/categories'
-  weight = -110
+identifier = 'categories'
+name = 'categories'
+url = '/categories'
+weight = -110
 [[menu.main]]
-  identifier = 'tag'
-  name = 'tags'
-  url = '/tags'
-  weight = -110
+identifier = 'tag'
+name = 'tags'
+url = '/tags'
+weight = -110
