@@ -15,6 +15,7 @@
     rel="stylesheet"
     href="https://unpkg.com/tachyons@4.12.0/css/tachyons.min.css"
   />
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.css"/> -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/highlight.js/9.1.0/styles/github.min.css"> -->
   <!-- <script src="https://cdn.tailwindcss.com"></script> -->
@@ -30,7 +31,7 @@
   {{ partial "schema.html" . }}
 	{{ partial "breadcrumbs.html" . }}
 </head>
-<body>
+<body x-data :class="$store.darkMode.on && 'dark'">
 	{{ if .IsHome }}
 	<div class="mw7 center sans-serif ">
 		{{ end }}
@@ -38,5 +39,18 @@
 	{{ block "main" . }}{{ end }}
 	{{ partial "footer" . }}
 	</div>
+
+	<script>
+		document.addEventListener('alpine:init', () => {
+			Alpine.store('darkMode', {
+				on: false,
+	 
+				toggle() {
+					this.on = ! this.on
+				}
+			})
+		})
+	</script>
+
 </body>
 </html>

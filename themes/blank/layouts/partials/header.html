@@ -13,7 +13,7 @@
 
 	<nav class="db dt-l w-100 border-box pa3 ph5-l">
 		<a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="{{ .Site.BaseURL }}" title="Home">
-		  <img src="/img/img1.png" class="dib w2 h2 br-100" alt="Site Name">
+		  <img src="/img/logoo.png" class="dib w2 h2 br-0" alt="Site Name">
 		  <!-- {{ .Site.Title }} -->
 		</a>
 		{{ with .Site.Menus.main }}
@@ -21,6 +21,7 @@
 			{{ range .}}
 		  <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="{{ .URL | relURL }}">{{ .Name }}</a>
 		  {{ end }}
+			<button x-data @click="$store.darkMode.toggle()">Toggle Dark Mode</button>
 		</div>
 		{{ end }}
 	  </nav>

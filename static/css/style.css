@@ -48,6 +48,7 @@ pre code {
 	border-radius: 0;
 }
 
+
 /* definition list */
 dl {
 	margin-top: 0;
@@ -95,6 +96,12 @@ th {
 p > img {
 	max-width: 40%;
 }
+body.dark, body.dark header *, body.dark main *, body.dark aside *, body.dark footer * {
+	background: #333;
+	color: #ddd;
+	border-color: #ddd
+}
+
 
 @media screen and (min-width: 30em) {
     p {

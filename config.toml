@@ -5,7 +5,7 @@ theme = "blank"
 
 summaryLength = 12
 
-paginate = 3
+paginate = 5
 
 [permalink]
 post = ':/slug'
@@ -21,10 +21,10 @@ location = "Makassar"
 
 [Params]
 description = "Deskripsi untuk JsonLD ditulis di config.toml"
-logo = "/img/logo.png"
+logo = ["../img/logoo.png"]
 copyright = "I am license of website structure data"
 # untuk rich data image missing tambahkan ini 
-images = ["https://izzulislam.com/images/face.png"]
+images = ["../img/logoo.png"]
 
 
 [menu]

@@ -1,0 +1,61 @@
+<!-- <article>
+	<h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+	<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}"></time>
+	<br/>
+	<!-- show category of the post
+	{{ range .Params.categories }}
+	<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
+	{{ end }}
+	<br/>
+	<!-- show tag of the post
+	{{ range .Params.tags }}
+	<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+	{{ end }}
+	<div>
+		<!-- set thumbnail if available in the post 
+		{{ if and (isset .Params "thumbnail") .Params.thumbnail }}
+		<img width="200px" src="{{ .Params.thumbnail | relURL }} "></img>
+		{{ end }}
+	<br/>
+		{{ .Summary }}
+		{{ if .Truncated }}
+			<a href="{{ .Permalink }}">Read more...</a>
+		{{ end }}
+	</div>
+</article> -->
+
+<article class="pv4 bt bb b--black-10 ph3 ph0-l">
+    <div class="flex flex-column flex-row-ns">
+      <div class="w-100 pr3-ns order-2 order-1-ns mb2">
+        <h3 class="f3 athelas mt0 lh-title" ><a class="link black dim" href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <p class="f5 f4-l lh-copy athelas">{{ .Summary }}</p>
+		<!-- {{ if .Truncated }}
+			<a class="link ttu ba pa1 black dim f7" href="{{ .Permalink }}">Read more...</a>
+		{{ end }} -->
+      </div>
+		{{ if and (isset .Params "thumbnail") .Params.thumbnail }}
+      <div class="pl3-ns order-1 order-2-ns mb4 mb0-ns w-100 w-40-ns">
+        <img src="{{ .Params.thumbnail | relURL }}" class="db" alt="">
+      </div>
+		{{ end }}
+    </div>
+    <!-- <p class="f6 lh-copy gray mv0-ns mv2">By <span class="ttc">{{ .Site.Author.name }} in {{ .Site.Author.location }}</span></p>
+    <time class="f6 db gray">{{ .Date.Format "02 January 2006" }}</time>
+	<br/> -->
+	 <!-- show category of the post -->
+	{{ if and (isset .Params "categories") .Params.categories }}
+	<svg viewBox="0 0 512 512" fill="#ddd" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z"></path></svg>
+	{{ end }}
+	{{ range .Params.categories }}
+	<small><a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" class="link list ttc f6 black-40 dim">{{ . }}</a></small>
+	{{ end }}
+
+	<br/>
+	 <!-- show tag of the post -->
+	{{ if and (isset .Params "tags") .Params.tags }}
+	<svg viewBox="0 0 512 512" fill="#ddd" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path d="M20 39.5c-8.836 0-16 7.163-16 16v176c0 4.243 1.686 8.313 4.687 11.314l224 224c6.248 6.248 16.378 6.248 22.626 0l176-176c6.244-6.244 6.25-16.364.013-22.615l-223.5-224A15.999 15.999 0 00196.5 39.5H20zm56 96c0-13.255 10.745-24 24-24s24 10.745 24 24-10.745 24-24 24-24-10.745-24-24z"></path><path d="M259.515 43.015c4.686-4.687 12.284-4.687 16.97 0l228 228c4.686 4.686 4.686 12.284 0 16.97l-180 180c-4.686 4.687-12.284 4.687-16.97 0-4.686-4.686-4.686-12.284 0-16.97L479.029 279.5 259.515 59.985c-4.686-4.686-4.686-12.284 0-16.97z"></path></svg>
+	{{ end }}
+	{{ range .Params.tags }}
+	<small><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" class="link list ttl f6 black-40 dim">{{ . }}</a></small>
+	{{ end }}
+  </article>
