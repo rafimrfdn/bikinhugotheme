@@ -2,7 +2,7 @@
   {{ if .Paginator.HasPrev }}
   <a
     href="{{ .Paginator.Prev.URL }}"
-    class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box mr4"
+    class="f5 no-underline black bg-animate hover-bg-black-50 hover-white inline-flex items-center pa3 ba border-box mr4"
   >
     <svg
       class="w1"
@@ -18,7 +18,7 @@
   {{ end }} {{ if .Paginator.HasNext }}
   <a
     href="{{ .Paginator.Next.URL }}"
-    class="f5 no-underline black bg-animate hover-bg-black hover-white inline-flex items-center pa3 ba border-box"
+    class="f5 no-underline black bg-animate hover-bg-black-50 hover-white inline-flex items-center pa3 ba border-box"
   >
     <span class="pr1">Next</span>
     <svg
