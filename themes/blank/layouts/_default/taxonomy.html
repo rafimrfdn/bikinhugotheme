@@ -1,10 +1,10 @@
 {{ define "main" }}
 <main class="mw6 center sans-serif">
   <h2 class="flex justify-center ttu">{{ .Title }}</h2>
-  
+
 
   <!-- category -->
-{{ if eq .Data.Plural "categories" }}
+  {{ if eq .Data.Plural "categories" }}
   {{ range .Pages }}
   <article class="dt w-100 bb b--black-05 pb2 mt2">
 
@@ -22,39 +22,46 @@
 
   </article>
   {{ end }}
-{{ end }}
+  {{ end }}
 
   <!-- tags -->
-{{ if eq .Data.Plural "tags" }}
+  {{ if eq .Data.Plural "tags" }}
   {{ range .Pages }}
+
+  {{ if .Data.Singular }}
+  <a class="dib f4 f2-ns b db pa2 link dim mid-gray" href="{{ .RelPermalink }}">{{ .Page.Title }}</a>
+
+
+  {{ else }}
   <article class="dt w-100 bb b--black-05 pb2 mt2">
 
-    <!-- thumbnail muncul pada list artikel pada sebuah tag/category  -->
     {{ if and (isset .Params "thumbnail") .Params.thumbnail }}
     <div class="dtc w2 w3-ns v-mid">
       <img src="{{ .Params.thumbnail | relURL }}" class="ba b--black-10 db br2 w2 w3-ns h2 h3-ns"/>
     </div>
     {{ end }}
 
-    <div class="dtc v-mid pl3">
+    <div class=" dtc v-mid pl3">
       <h3 class="f6 f5-ns fw6 lh-title black mv0"><a class="link list black dim" href="{{ .RelPermalink }}">{{.Page.Title }}</a></h3>
       <h4 class="f6 fw4 mt0 mb0 black-60"></h4>
     </div>
 
+    {{ end }}
+
   </article>
   {{ end }}
-{{ end }}
+  {{ end }}
 
 
   <!-- category list 
-  <ul class="list pa3 pa5-ns">
-    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-        {{ with $.Site.GetPage (printf "/categories/%s" $name) }}
-            <li class="dib mr2">
-            <a class="f6 b db pa2 link dim mid-gray" href="{{ .Permalink }}">{{ $name }}</a></li>
-        {{ end }}
-    {{ end }}
+<ul class="list pa3 pa5-ns">
+{{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+{{ with $.Site.GetPage (printf "/categories/%s" $name) }}
+<li class="dib mr2">
+<a class="f6 b db pa2 link dim mid-gray" href="{{ .Permalink }}">{{ $name }}</a></li>
+{{ end }}
+{{ end }}
 </ul> -->
- 
+
 </main>        
 {{ end }}
