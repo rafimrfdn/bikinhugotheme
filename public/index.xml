@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bikin</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Bikin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Mon, 25 Jul 2022 14:00:28 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Documentation</title>
+      <link>http://localhost:1313/documentation/</link>
+      <pubDate>Wed, 27 Jul 2022 08:40:07 +0800</pubDate>
+      
+      <guid>http://localhost:1313/documentation/</guid>
+      <description>Advertisement :)
+ pica - high quality and fast image resize in browser.</description>
+    </item>
+    
+    <item>
+      <title>Tesss</title>
+      <link>http://localhost:1313/post/tesss/</link>
+      <pubDate>Mon, 25 Jul 2022 14:00:28 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/tesss/</guid>
+      <description>Tidak seperti anggapan banyak orang, Lorem Ipsum bukanlah teks-teks yang diacak. Ia berakar dari sebuah naskah sastra latin klasik dari era 45 sebelum masehi, hingga bisa dipastikan usianya telah mencapai lebih dari 2000 tahun.</description>
+    </item>
+    
+    <item>
+      <title>Ini Title 6</title>
+      <link>http://localhost:1313/post/post6/</link>
+      <pubDate>Sun, 17 Jul 2022 20:09:27 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/post6/</guid>
+      <description>Ut facilisis ex non libero ornare convallis ut quis sapien.
+Donec ullamcorper mollis erat, nec auctor nunc faucibus sit amet.</description>
+    </item>
+    
+    <item>
+      <title>Post 5</title>
+      <link>http://localhost:1313/post/post5/</link>
+      <pubDate>Tue, 12 Jul 2022 21:10:53 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/post5/</guid>
+      <description>Halo ini adalah post kedua.
+Enjoy tachyons..
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Post 4</title>
+      <link>http://localhost:1313/post/post4/</link>
+      <pubDate>Sun, 10 Jul 2022 19:37:49 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/post4/</guid>
+      <description>Halo ini post Empat</description>
+    </item>
+    
+    <item>
+      <title>Ini Title</title>
+      <link>http://localhost:1313/post/post3/</link>
+      <pubDate>Mon, 04 Jul 2022 20:09:27 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/post3/</guid>
+      <description>Ut facilisis ex non libero ornare convallis ut quis sapien.
+Donec ullamcorper mollis erat, nec auctor nunc faucibus sit amet.</description>
+    </item>
+    
+    <item>
+      <title>Post2</title>
+      <link>http://localhost:1313/post/post2/</link>
+      <pubDate>Thu, 30 Jun 2022 21:10:53 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/post2/</guid>
+      <description>Halo ini adalah post kedua.
+Enjoy tachyons..
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Post1</title>
+      <link>http://localhost:1313/post/post1/</link>
+      <pubDate>Wed, 29 Jun 2022 19:37:49 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/post1/</guid>
+      <description>Halo ini post pertama</description>
+    </item>
+    
+    <item>
+      <title>Tempat Wisata yang Hits di Makassar Selama Pandemi Corona</title>
+      <link>http://localhost:1313/post/tempat-wisata-hits-di-makassar/</link>
+      <pubDate>Thu, 23 Jun 2022 04:57:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/tempat-wisata-hits-di-makassar/</guid>
+      <description>PetaMakassar - Kali ini admin akan membagikan tempat wisata yang sedang hits di Makassar.</description>
+    </item>
+    
+    <item>
+      <title>Alasan mengapa kampus UNHAS disebut Sangat Ramah Lingkungan</title>
+      <link>http://localhost:1313/post/kampus-unhas-ramah-lingkungan/</link>
+      <pubDate>Wed, 15 Jun 2022 19:05:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/kampus-unhas-ramah-lingkungan/</guid>
+      <description>Peta Makassar – Ada banyak sekali hal yang bisa ditemukan di kampus UNHAS Makassar.</description>
+    </item>
+    
+    <item>
+      <title>Cara Naik Bus DAMRI Makassar dari Kota ke Bandara Hasanuddin</title>
+      <link>http://localhost:1313/post/naik-damri-bandara-sultan-hasanuddin-makassar/</link>
+      <pubDate>Mon, 13 Jun 2022 02:53:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/naik-damri-bandara-sultan-hasanuddin-makassar/</guid>
+      <description>Peta Makassar - Panduan naik bus Damri Makassar dari kota ke bandara Sultan Hasanuddin Makassar atau sebaliknya.</description>
+    </item>
+    
+    <item>
+      <title>Beach Stone Makassar - Nongkrong Ala Pantai Seminyak Bali</title>
+      <link>http://localhost:1313/post/beach-stone-makassar/</link>
+      <pubDate>Mon, 28 Mar 2022 07:49:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/beach-stone-makassar/</guid>
+      <description>Petamakassar - Hi guys, pernahkah kamu berkunjung ke Beach Stone Makassar?
+Kalau belum coba deh, soalnya di sana terdapat tempat yang mirip sekali dengan suasana pantai Seminyak di Bali, tapi dengan suasana kearifan lokal ala Makassar.</description>
+    </item>
+    
+    <item>
+      <title>17&#43; Tempat Spot Foto Wajib di Makassar</title>
+      <link>http://localhost:1313/post/tempat-spot-foto-di-makassar/</link>
+      <pubDate>Sun, 28 Mar 2021 07:13:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/tempat-spot-foto-di-makassar/</guid>
+      <description>PetaMakassar - Admin Peta Makassar, selain senang mengunjungi cafe di Makassar, juga senang memotret loh.</description>
+    </item>
+    
+    <item>
+      <title>Logo Kampus di Makassar</title>
+      <link>http://localhost:1313/post/logo-kampus-di-makassar/</link>
+      <pubDate>Wed, 15 Apr 2020 01:56:13 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/logo-kampus-di-makassar/</guid>
+      <description>PetaMakassar - Logo merupakan identitas setiap institusi, salah satunya yang memiliki logo pastilah kampus.</description>
+    </item>
+    
+    <item>
+      <title>110 Daftar Kampus yang Ada di Makassar</title>
+      <link>http://localhost:1313/post/daftar-kampus-di-makassar/</link>
+      <pubDate>Mon, 13 Apr 2020 10:01:59 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/daftar-kampus-di-makassar/</guid>
+      <description>Ada berapa kampus di Makassar?
+PetaMakassar - Belajar merupakan kewajiban semua orang. Sejak kecil kita sudah dibimbing oleh guru untuk belajar di sekolah.</description>
+    </item>
+    
+    <item>
+      <title>Cara Diet dengan Bersepeda</title>
+      <link>http://localhost:1313/post/cara-diet-dengan-bersepeda/</link>
+      <pubDate>Sat, 01 Feb 2020 05:11:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/cara-diet-dengan-bersepeda/</guid>
+      <description>PetaMakassar - Hobi sepeda memang sedang digemari di Makassar. Banyak orang yang beramai-ramai membeli sepeda.</description>
+    </item>
+    
+    <item>
+      <title>13 Rekomendasi Tempat Nongkrong Hits di Makassar</title>
+      <link>http://localhost:1313/post/tempat-nongkrong-di-makassar/</link>
+      <pubDate>Sun, 23 Jun 2019 01:41:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/tempat-nongkrong-di-makassar/</guid>
+      <description>Inilah daftar tempat nongkrong di Makassar yang paling ramai dikunjungi Peta Makassar - Nongkrong merupakan kegiatan yang mengasyikkan.</description>
+    </item>
+    
+    <item>
+      <title>Lapangan Karebosi Baru di Makassar</title>
+      <link>http://localhost:1313/post/lapangan-karebosi-baru-di-makassar/</link>
+      <pubDate>Fri, 14 Jun 2019 18:38:25 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/lapangan-karebosi-baru-di-makassar/</guid>
+      <description>Peta Makassar - Lapangan Karebosi, begitulah orang Makassar menyebutnya.
+Di tempat ini sejak saya pertama kali melihatnya, waktu masih kecil dulu.</description>
+    </item>
+    
+    <item>
+      <title>Halaman error</title>
+      <link>http://localhost:1313/404/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/404/</guid>
+      <description>halaman eror 404</description>
+    </item>
+    
+  </channel>
+</rss>

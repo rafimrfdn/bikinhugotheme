@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>list on Bikin</title>
+    <link>http://localhost:1313/categories/list/</link>
+    <description>Recent content in list on Bikin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Thu, 23 Jun 2022 04:57:17 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/list/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tempat Wisata yang Hits di Makassar Selama Pandemi Corona</title>
+      <link>http://localhost:1313/post/tempat-wisata-hits-di-makassar/</link>
+      <pubDate>Thu, 23 Jun 2022 04:57:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/tempat-wisata-hits-di-makassar/</guid>
+      <description>PetaMakassar - Kali ini admin akan membagikan tempat wisata yang sedang hits di Makassar.</description>
+    </item>
+    
+    <item>
+      <title>17&#43; Tempat Spot Foto Wajib di Makassar</title>
+      <link>http://localhost:1313/post/tempat-spot-foto-di-makassar/</link>
+      <pubDate>Sun, 28 Mar 2021 07:13:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/tempat-spot-foto-di-makassar/</guid>
+      <description>PetaMakassar - Admin Peta Makassar, selain senang mengunjungi cafe di Makassar, juga senang memotret loh.</description>
+    </item>
+    
+    <item>
+      <title>Logo Kampus di Makassar</title>
+      <link>http://localhost:1313/post/logo-kampus-di-makassar/</link>
+      <pubDate>Wed, 15 Apr 2020 01:56:13 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/logo-kampus-di-makassar/</guid>
+      <description>PetaMakassar - Logo merupakan identitas setiap institusi, salah satunya yang memiliki logo pastilah kampus.</description>
+    </item>
+    
+    <item>
+      <title>110 Daftar Kampus yang Ada di Makassar</title>
+      <link>http://localhost:1313/post/daftar-kampus-di-makassar/</link>
+      <pubDate>Mon, 13 Apr 2020 10:01:59 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/daftar-kampus-di-makassar/</guid>
+      <description>Ada berapa kampus di Makassar?
+PetaMakassar - Belajar merupakan kewajiban semua orang. Sejak kecil kita sudah dibimbing oleh guru untuk belajar di sekolah.</description>
+    </item>
+    
+    <item>
+      <title>13 Rekomendasi Tempat Nongkrong Hits di Makassar</title>
+      <link>http://localhost:1313/post/tempat-nongkrong-di-makassar/</link>
+      <pubDate>Sun, 23 Jun 2019 01:41:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/tempat-nongkrong-di-makassar/</guid>
+      <description>Inilah daftar tempat nongkrong di Makassar yang paling ramai dikunjungi Peta Makassar - Nongkrong merupakan kegiatan yang mengasyikkan.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>post on Bikin</title>
+    <link>http://localhost:1313/tags/post/</link>
+    <description>Recent content in post on Bikin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Tue, 12 Jul 2022 21:10:53 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Post 5</title>
+      <link>http://localhost:1313/post/post5/</link>
+      <pubDate>Tue, 12 Jul 2022 21:10:53 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/post5/</guid>
+      <description>Halo ini adalah post kedua.
+Enjoy tachyons..
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
+    </item>
+    
+    <item>
+      <title>Post 4</title>
+      <link>http://localhost:1313/post/post4/</link>
+      <pubDate>Sun, 10 Jul 2022 19:37:49 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/post4/</guid>
+      <description>Halo ini post Empat</description>
+    </item>
+    
+  </channel>
+</rss>

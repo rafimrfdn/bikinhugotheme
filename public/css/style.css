@@ -1,0 +1,118 @@
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+    font-family: georgia, serif;
+}
+
+.content > p{
+	max-width: 30em;
+}
+
+.content * {
+	text-decoration: none;
+}
+
+blockquote p {
+    font-size: .875rem;
+    font-style: italic;
+    border-left-style: solid;
+    border-left-width: 1px;
+    padding-left: 2rem;
+    border-width: .125rem;
+    border-color: #ffb700;
+    margin-bottom: 2rem;
+}
+
+code {
+	padding: 2px 4px;
+	font-size: 90%;
+	color: #c7254e;
+	background-color: #f9f2f4;
+	border-radius: 4px;
+}
+
+
+pre {
+	display: block;
+	padding: 9.5px;
+	margin: 0 0 10px;
+	font-size: 13px;
+	line-height: 1.42857143;
+	color: #333;
+	word-break: break-all;
+	word-wrap: break-word;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	max-width: 52em;
+}
+
+pre code {
+	padding: 0;
+	font-size: inherit;
+	color: inherit;
+	white-space: pre-wrap;
+	background-color: transparent;
+	border-radius: 0;
+}
+
+
+/* definition list */
+dl {
+	margin-top: 0;
+	margin-bottom: 20px;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin-left: 0;
+}
+dt, dd {
+	line-height: 1.42857143;
+}
+
+/* foot note */
+div.footnotes p {
+    font-family: sans-serif;
+	font-size: .9em;
+	margin-bottom: 0;
+	line-height: 1em;
+}
+
+table {
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+table > thead > tr > th, table > tbody > tr > th, table > tfoot > tr > th, table > thead > tr > td, table > tbody > tr > td, table > tfoot > tr > td {
+	padding: 8px;
+	line-height: 1.42857143;
+	vertical-align: top;
+	border-top: 1px solid #ddd;
+}
+
+table > thead > tr > th {
+	vertical-align: bottom;
+	border-bottom: 2px solid #ddd;
+}
+
+th {
+	text-align: left;
+}
+
+body.dark, body.dark header *, body.dark main *, body.dark aside *, body.dark footer * {
+	background: #333;
+	color: #ddd;
+	border-color: #555;
+}
+
+@media screen and (min-width: 30em) {
+    p {
+        font-size: 1.25rem;
+    }
+    blockquote {
+        font-size: 1rem;
+    }
+}

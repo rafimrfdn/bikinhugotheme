@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>story on Bikin</title>
+    <link>http://localhost:1313/tags/story/</link>
+    <description>Recent content in story on Bikin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>id</language>
+    <lastBuildDate>Mon, 28 Mar 2022 07:49:27 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/story/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Beach Stone Makassar - Nongkrong Ala Pantai Seminyak Bali</title>
+      <link>http://localhost:1313/post/beach-stone-makassar/</link>
+      <pubDate>Mon, 28 Mar 2022 07:49:27 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/beach-stone-makassar/</guid>
+      <description>Petamakassar - Hi guys, pernahkah kamu berkunjung ke Beach Stone Makassar?
+Kalau belum coba deh, soalnya di sana terdapat tempat yang mirip sekali dengan suasana pantai Seminyak di Bali, tapi dengan suasana kearifan lokal ala Makassar.</description>
+    </item>
+    
+    <item>
+      <title>Cara Diet dengan Bersepeda</title>
+      <link>http://localhost:1313/post/cara-diet-dengan-bersepeda/</link>
+      <pubDate>Sat, 01 Feb 2020 05:11:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/cara-diet-dengan-bersepeda/</guid>
+      <description>PetaMakassar - Hobi sepeda memang sedang digemari di Makassar. Banyak orang yang beramai-ramai membeli sepeda.</description>
+    </item>
+    
+  </channel>
+</rss>
